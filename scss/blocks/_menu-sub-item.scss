@@ -1,0 +1,42 @@
+.menu-sub-item_ {
+  &_title {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $pink-text;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  &_list {
+    padding-left: 12px;
+  }
+
+  &_item-link {
+    margin-top: 11px;
+  }
+
+  &_item-link:hover,
+  &_item-link:active,
+  &_item-link:focus {
+    cursor: pointer;
+    outline: none;
+    background-color: $pink-text;
+  }
+
+  &_menu__link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+  }
+
+  &_item-link:hover &_menu__link,
+  &_item-link:active &_menu__link,
+  &_item-link:focus &_menu__link {
+    color: $black;
+  }
+}

@@ -1,0 +1,215 @@
+.registration {
+  &__title-wrap {
+    height: 148px;
+    background: #F8F3F4;
+    display: flex;
+    margin-bottom: 64px;
+  }
+
+  &__title {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink-text;
+    font-weight: 400;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__form {
+    max-width: 360px;
+    margin-right: 130px;
+  }
+
+  &__form-fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-legend {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+  }
+
+  &__input {
+    margin-top: 20px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+  }
+
+  &__input[placeholder] {
+    text-overflow:ellipsis;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    padding-left: 16px;
+    color: #B1B1B1;
+  }
+
+  &__radio {
+    padding-top: 31px;
+    padding-bottom: 33px;
+  }
+
+  &__radio-label {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 13px;
+    text-align: left;
+  }
+
+  &__input-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-top: 15px;
+    padding-bottom: 39px;
+  }
+
+  &__submit{
+    display: flex;
+    background: #F16D7F;
+    align-content: center;
+    margin-bottom: 96px;
+  }
+
+  &__submit:hover,
+  &__submit:focus,
+  &__submit:active {
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
+  }
+
+  &__submit-text {
+    color: $white-text;
+    text-transform: uppercase;
+    padding-left: 29px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__submit-icon {
+    fill: $white-text;
+    padding-left: 20px;
+    align-self: center;
+    padding-right: 29px;
+  }
+
+  &__pluses {
+    padding-left: 10px;
+  }
+
+  &__pluses-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding-bottom: 22px;
+  }
+
+  &__pluses-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 21px;
+  }
+
+  &__pluses-list {
+    margin: 0;
+    list-style: none;
+  }
+
+  &__pluses-item {
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+    padding-left: 25px;
+  }
+
+  &__pluses-item:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    background-image: url(../img/vector.svg);
+    background-size: 15px 15px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .registration {
+
+    &__pluses-title {
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      padding-bottom: 32px;
+    }
+
+    &__form {
+      width: 50%;
+      margin-right: 22px;
+    }
+
+    &__pluses {
+      width: 50%;
+      padding-left: 10px;
+    }
+
+    &__pluses-text {
+      font-size: 16px;
+      line-height: 19px;
+      padding-bottom: 21px;
+    }
+
+    &__pluses-item {
+      position: relative;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .registration {
+    &__wrap {
+      flex-direction: column;
+    }
+
+    &__form {
+      max-width: 100%;
+      width: 100%;
+      margin-right: 22px;
+    }
+
+    &__pluses {
+      width: 100%;
+      padding-left: 10px;
+      margin-bottom: 100px;
+    }
+
+    &__submit {
+      margin-bottom: 40px;
+    }
+  }
+}
